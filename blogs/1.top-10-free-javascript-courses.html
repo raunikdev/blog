@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Free JavaScript Courses</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../navbar.css">
+    <style>
+        * {
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Navbar */
+        html{
+            scroll-behavior: smooth;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #00bcd4;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+        }
+
+            /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                background: rgba(0, 0, 0, 0.9);
+                flex-direction: column;
+                align-items: flex-start;
+                width: 160px;
+                border-radius: 10px;
+                display: none;
+                padding: 10px;
+                animation: slideDown 0.3s ease;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links li {
+                width: 100%;
+                margin: 8px 0;
+            }
+
+            .nav-links li a {
+                font-size: 16px;
+                width: 100%;
+                padding: 8px 10px;
+                border-radius: 8px;
+                transition: background 0.3s;
+            }
+
+            .nav-links li a:hover {
+                background: #00bcd4;
+                color: black;
+            }
+            }
+
+            /* Slide down animation */
+            @keyframes slideDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+
+        
+
+        .blog-layout {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+        }
+
+        .recommended-blogs {
+            background: #16161c;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .recommended-blogs h3 {
+            margin-bottom: 20px;
+            color: #f97316;
+        }
+
+        .recommended-post a {
+            text-decoration: none;
+            color: #e0e0e0;
+            display: block;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+        }
+
+        .recommended-post a:hover {
+            color: #f97316;
+        }
+
+        .blog-post {
+            background: #16161c;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .blog-post h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #f97316;
+        }
+
+        .meta {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 24px;
+            color: #f97316;
+        }
+
+        p {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .conclusion {
+            margin-top: 40px;
+            font-weight: 700;
+            font-size: 18px;
+            color: #f97316;
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        h2 a {
+            color: #1e90ff;
+            text-decoration: none;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        h2 a:hover {
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+            /* Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.7rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+            p {
+                font-size: 0.95rem;
+            }
+        }
+
+            /* Smooth transitions */
+        h1, h2, p {
+            transition: all 0.3s ease;
+        }
+
+            /* Responsive Nav */
+       
+        .blog-layout {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 40px;
+            padding: 20px;
+        }
+
+        @media (max-width: 900px) {
+            .blog-layout {
+                grid-template-columns: 1fr;
+            }
+
+            aside.recommended-blogs {
+                order: 2; /* Show sidebar below blog post */
+                margin-top: 30px;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="../index.html"><div class="logo">Course<span class="think">Think</span></div></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+    </nav>
+      
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: url('https://images.unsplash.com/photo-1581090700227-1c065c5857f5') center/cover no-repeat; height: 60vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
+        <div>
+            <h1 style="font-size: 3rem; margin-bottom: 10px;">Master JavaScript for Free</h1>
+            <p style="font-size: 1.2rem;">Unlock your coding potential with these handpicked courses</p>
+            <a href="#courses" style="padding: 12px 24px; background-color: #00d1b2; color: white; text-decoration: none; border-radius: 30px; margin-top: 20px; display: inline-block;">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Blog Layout -->
+    <div class="blog-layout" id="courses">
+        <aside class="recommended-blogs">
+            <h3 style="color: #00d1b2">Recommended Blogs</h3>
+            <div class="recommended-post">
+                <a href="1.top-10-free-javascript-courses.html">
+                    <h4>Top 10 Free JavaScript Courses</h4>
+                    <p>Master JavaScript with these free resources</p>
+                </a>
+            </div>
+            <div class="recommended-post">
+                <a href="5.best-online-platforms-to-learn-data-science.html">
+                    <h4>Best Data Science Platforms</h4>
+                    <p>Launch your data science career</p>
+                </a>
+            </div>
+            <div class="recommended-post">
+                <a href="4.free-vs-paid-coding-courses.html">
+                    <h4>Free vs Paid Courses</h4>
+                    <p>How to choose what's right for you</p>
+                </a>
+            </div>
+        </aside>
+        
+        <article class="blog-post">
+            <h1 style="color: #00d1b2">Top 10 Free JavaScript Courses You Can Start Today</h1>
+            <div class="meta">
+                <span><i class="fas fa-user"></i> By Bruce</span> | 
+                <span><i class="fas fa-calendar"></i> June 15, 2023</span> | 
+                <span><i class="fas fa-clock"></i> 5 min read</span>
+            </div>
+            <img class="blog-image" src="https://images.unsplash.com/photo-1627398242454-45a1465c2479" alt="JavaScript code on screen" style="width:100%; height:300px; object-fit:cover; border-radius: 15px; margin-bottom: 20px;">
+            <p style="line-height: 1.8;">JavaScript remains one of the most in-demand programming languages, powering over 97% of websites worldwide. Whether you're building interactive websites, mobile apps, or backend servers, a solid grasp of JavaScript is essential. And the best part? You don't need to spend a dime to learn it!</p>
+
+            <blockquote style="border-left: 4px solid #00d1b2; padding-left: 20px; color: #555; margin: 20px 0;">
+                "The best way to get started with coding is to dive right in. These courses offer the perfect launchpad for your programming journey."
+            </blockquote>
+
+            <p style="line-height: 1.8;">Below, you'll find a curated list of the top 10 free JavaScript courses that combine interactive learning, real-world projects, and modern best practices. Let's get coding!</p>
+
+            <div class="container">
+                <h1 style="color: #00d1b2">Top 10 JavaScript Courses for Beginners</h1>
+              
+                <div>
+              
+                  <h2><a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">1. JavaScript Fundamentals (Codecademy)</a></h2>
+                  <p>Start from absolute zero and build a strong base in JavaScript. Learn about variables, conditionals, loops, functions, and data types. Deep dive into arrays, objects, event handling, and DOM manipulation. Includes interactive exercises, quizzes, and projects to ensure mastery of basic to intermediate concepts.</p>
+              
+                  <h2><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank">2. JavaScript Algorithms and Data Structures (freeCodeCamp)</a></h2>
+                  <p>A massive curriculum covering beginner to advanced topics like recursion, object-oriented programming, functional programming, ES6 features, regular expressions, debugging, advanced algorithm scripting, and dynamic programming. You’ll also work on certification projects building real-world applications.</p>
+              
+                  <h2><a href="https://www.udemy.com/course/modern-javascript-from-the-beginning/" target="_blank">3. Modern JavaScript From The Beginning (Udemy)</a></h2>
+                  <p>A complete guide to modern JavaScript starting from scratch. Learn variables (var, let, const), template literals, destructuring, spread/rest operators, arrow functions, asynchronous JavaScript (promises, async/await), fetch API, local storage, modular patterns, and create multiple real-world projects like weather apps, task lists, and form validators.</p>
+              
+                  <h2><a href="https://javascript30.com/" target="_blank">4. JavaScript30 (Wes Bos)</a></h2>
+                  <p>Code 30 hands-on projects such as custom video players, drawing apps, interactive galleries, and more — using pure JavaScript (no libraries/frameworks). Master event listeners, DOM traversal, CSS variables with JS, array methods, and API consumption while sharpening your real-world coding skills daily.</p>
+              
+                  <h2><a href="https://scrimba.com/learn/learnjavascript" target="_blank">5. Learn JavaScript (Scrimba)</a></h2>
+                  <p>An interactive screencast course covering modern JavaScript essentials. Topics include variables, loops, functions, objects, arrays, error handling, asynchronous code (promises and async/await), fetch API, building interactive web apps, and deploying them. Includes hands-on projects like a password generator, weather app, and shopping cart.</p>
+              
+                  <h2><a href="https://www.khanacademy.org/computing/computer-programming/programming" target="_blank">6. JavaScript Basics (Khan Academy)</a></h2>
+                  <p>Learn programming concepts through interactive visual programs, animations, and games. Explore variables, functions, loops, conditionals, logic, drawing with code (using ProcessingJS), basic game development, and event-driven programming. Ideal for students who love learning by building fun and visual projects.</p>
+              
+                  <h2><a href="https://www.udacity.com/course/intro-to-javascript--ud803" target="_blank">7. Intro to JavaScript (Udacity)</a></h2>
+                  <p>Focuses on applying JavaScript to real-world web development. Topics include functions, loops, data types, arrays, objects, DOM manipulation, browser events, asynchronous programming, API calls (fetch and JSON), error handling, and building fully functional, interactive websites.</p>
+              
+                  <h2><a href="http://jsforcats.com/" target="_blank">8. JavaScript for Cats</a></h2>
+                  <p>A light-hearted yet serious guide aimed at beginners, explaining JavaScript concepts like variables, functions, scope, objects, methods, constructor functions, and prototype inheritance in a super friendly tone. Great for demystifying technical concepts if you're completely new to programming.</p>
+              
+                  <h2><a href="https://frontendmasters.com/courses/functional-js/" target="_blank">9. Functional Programming in JavaScript (Frontend Masters)</a></h2>
+                  <p>An advanced course teaching how to write clean, modular, and reusable JavaScript code using functional programming techniques. Topics include pure functions, immutability, recursion, closures, higher-order functions, currying, composition, and real-world functional patterns to build scalable apps.</p>
+              
+                  <h2><a href="https://testautomationu.applitools.com/javascript-testing-tutorial/" target="_blank">10. JavaScript Testing (Test Automation University)</a></h2>
+                  <p>A professional course focusing entirely on JavaScript testing. Learn about unit testing, integration testing, mocking, stubbing, writing testable code, test-driven development (TDD), behavior-driven development (BDD), and master frameworks like Jest, Mocha, Chai, and Cypress for end-to-end testing.</p>
+              
+                </div>
+              
+              </div>
+              
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: #222; color: white; text-align: center; padding: 20px; margin-top: 40px;">
+        <p>© 2025 My Blog | Made with ❤️ by Bruce</p>
+        <div style="margin-top: 10px;">
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-facebook"></i></a>
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getElementById('nav-links');
+  
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+</script>
+  
+
+</html>

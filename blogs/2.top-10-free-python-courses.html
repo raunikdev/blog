@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Free Python Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+
+        /* Blog Layout */
+        .blog-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 40px;
+            margin-top: 100px;
+            padding: 0 5%;
+        }
+
+        /* Blog Post */
+        .blog-post {
+            max-width: 850px;
+            padding: 40px;
+            background: linear-gradient(145deg, #1c1c1c, #272727);
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .meta {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #00d4aa;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .blog-post h2 {
+            font-size: 1.6rem;
+            color: #ffffff;
+            margin-top: 25px;
+            font-weight: 600;
+            border-bottom: 2px solid #00d4aa;
+            padding-bottom: 5px;
+        }
+
+        .blog-image {
+            border-radius: 15px;
+            margin-bottom: 30px;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .blog-image:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        .conclusion {
+            margin-top: 40px;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #aaa;
+            font-weight: 400;
+        }
+
+        /* Recommended Blogs */
+        .recommended-blogs {
+            background-color: #1c1c1c;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .recommended-post {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            transition: padding 0.3s ease;
+        }
+
+        .recommended-post h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #00d4aa;
+            transition: color 0.3s ease, letter-spacing 0.3s ease;
+        }
+
+        .recommended-post a {
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        .recommended-post:hover h4 {
+            color: #00d1b2;
+            letter-spacing: 1px;
+        }
+
+        .recommended-post:hover {
+            background-color: #121212;
+            padding-left: 15px;
+        }
+
+        .recommended-post a:hover {
+            color: #00d1b2;
+            text-decoration: underline;
+        }
+
+        /* Conclusion */
+        .conclusion p {
+            color: #bbb;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blog-layout {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .recommended-blogs {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Course<span class="think">Think</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+    </nav>
+
+    <div class="blog-layout">
+        <aside class="recommended-blogs">
+            <h3>Recommended Blogs</h3>
+            <div class="recommended-post">
+                <a href="1.top-10-free-javascript-courses.html">
+                    <h4>Top 10 Free JavaScript Courses</h4>
+                    <p>Master JavaScript with these free resources</p>
+                </a>
+            </div>
+            <div class="recommended-post">
+                <a href="5.best-online-platforms-to-learn-data-science.html">
+                    <h4>Best Data Science Platforms</h4>
+                    <p>Launch your data science career</p>
+                </a>
+            </div>
+            <div class="recommended-post">
+                <a href="4.free-vs-paid-coding-courses.html">
+                    <h4>Free vs Paid Courses</h4>
+                    <p>How to choose what's right for you</p>
+                </a>
+            </div>
+        </aside>
+
+        <article class="blog-post">
+            <h1>Top 10 Free Python Courses for Beginners and Beyond</h1>
+            <div class="meta">
+                <span>By Alex Chen</span> | <span>June 5, 2023</span>
+            </div>
+            <img class="blog-image" src="https://vitalskills.in/wp-content/uploads/2024/05/Python-Programming.webp" alt="Python code on screen">
+            <p>Python continues to dominate as one of the most popular programming languages. Whether you're new to coding or looking to expand your skills, these free courses offer excellent learning opportunities.</p>
+
+
+            <h2>1. Python for Beginners (Microsoft)</h2> <p><strong>Description:</strong> A 44-part video series by Microsoft instructors introducing Python from scratch, ideal for beginners with no prior programming experience. Covers basics like variables, loops, and functions through interactive exercises.</p> <p><strong>Benefits:</strong> Hands-on coding practice with Microsoft Learn platform; get certificates of completion.</p> <p><strong>Who it's for:</strong> Absolute beginners wanting a solid start in Python programming.</p> <p><strong>Highlights:</strong> Project-based approach, regular quizzes, and real-world examples.</p> <p><strong>Post-course Outcomes:</strong> Build basic apps, scripts, and understand Python syntax confidently.</p>
+            <h2>2. Python for Everybody (University of Michigan)</h2> <p><strong>Description:</strong> A top-rated Coursera specialization designed by Dr. Charles Severance ("Dr. Chuck"), covering Python fundamentals, data structures, web access, and databases.</p> <p><strong>Benefits:</strong> Deep conceptual clarity, graded assignments, and peer discussions.</p> <p><strong>Who it's for:</strong> Beginners aiming for a strong grasp of Python's applications in data and web.</p> <p><strong>Highlights:</strong> Real-life projects like building a web crawler and database applications.</p> <p><strong>Post-course Outcomes:</strong> Be ready to tackle advanced courses on Django, Flask, and data science.</p>
+
+
+            <h2>3. Learn Python (Codecademy)</h2> <p><strong>Description:</strong> Highly interactive coding course teaching Python syntax, control flow, loops, functions, and object-oriented programming.</p> <p><strong>Benefits:</strong> Instant feedback on code, personalized learning paths, and badge rewards.</p> <p><strong>Who it's for:</strong> Learners who prefer learning by doing and visual feedback.</p> <p><strong>Highlights:</strong> Includes mini-projects like password generators, simple games, and data analysis scripts.</p> <p><strong>Post-course Outcomes:</strong> Build portfolio-ready projects, learn to debug, and write clean Python code.</p>
+            <h2>4. Scientific Computing with Python (freeCodeCamp)</h2> <p><strong>Description:</strong> Part of freeCodeCamp’s 300-hour Data Science curriculum teaching Python programming, data analysis, and scientific computing fundamentals.</p> <p><strong>Benefits:</strong> 100% free, certification upon completion, vast practice exercises.</p> <p><strong>Who it's for:</strong> Aspiring data scientists and scientific researchers wanting to use Python for real-world data.</p> <p><strong>Highlights:</strong> Deep dives into numpy, pandas, matplotlib, and project-based assessments like budget apps and data visualizations.</p> <p><strong>Post-course Outcomes:</strong> Be ready for machine learning or deep learning courses.</p>
+            <h2>5. Python Basics (University of Helsinki)</h2> <p><strong>Description:</strong> Text-based course emphasizing the importance of coding style, problem-solving, and independent coding through automatic graded exercises.</p> <p><strong>Benefits:</strong> Self-paced, high-quality feedback through automated systems, aligned with industry best practices.</p> <p><strong>Who it's for:</strong> Learners who enjoy text-based learning and structured programming challenges.</p> <p><strong>Highlights:</strong> Covers basics to intermediate-level topics like recursion and object-oriented programming.</p> <p><strong>Post-course Outcomes:</strong> Master the basics needed for competitive programming or technical interviews.</p>
+            <h2>6. Python 3 Programming (University of Michigan)</h2> <p><strong>Description:</strong> Coursera specialization that goes deep into Python 3’s new features, including iterators, decorators, generators, and advanced modules.</p> <p><strong>Benefits:</strong> Industry-focused syllabus, assignments, and a professional certificate upon completion.</p> <p><strong>Who it's for:</strong> Learners with basic Python knowledge looking to master more complex aspects of the language.</p> <p><strong>Highlights:</strong> Final capstone project where you build a full-fledged application.</p> <p><strong>Post-course Outcomes:</strong> Master intermediate Python programming and start backend development.</p>
+            <h2>7. Python for Data Science (IBM)</h2> <p><strong>Description:</strong> Offered by IBM through Coursera, this course dives into Python libraries for data science such as pandas, NumPy, Matplotlib, and introduces machine learning concepts.</p> <p><strong>Benefits:</strong> Hands-on labs, quizzes, and a digital badge from IBM.</p> <p><strong>Who it's for:</strong> Beginners interested in breaking into data science fields using Python.</p> <p><strong>Highlights:</strong> Real-world case studies, data visualization projects, and predictive modeling introduction.</p> <p><strong>Post-course Outcomes:</strong> Entry-level data analyst positions and readiness for ML certifications.</p>
+            <h2>8. Automate the Boring Stuff with Python</h2> <p><strong>Description:</strong> A legendary Python book and online course by Al Sweigart focusing on practical scripting to automate tedious tasks like file renaming, web scraping, and spreadsheet manipulation.</p> <p><strong>Benefits:</strong> Project-focused learning, tons of useful, practical scripts.</p> <p><strong>Who it's for:</strong> People who want to make everyday computer tasks easier with Python.</p> <p><strong>Highlights:</strong> Includes tasks like automating emails, PDFs, Excel work, and browser tasks.</p> <p><strong>Post-course Outcomes:</strong> Immediate productivity boost and enhanced tech efficiency in personal and work life.</p>
+            <h2>9. Python Core (SoloLearn)</h2> <p><strong>Description:</strong> A mobile-optimized interactive Python course offering bite-sized lessons on core concepts, quizzes, and community code challenges.</p> <p><strong>Benefits:</strong> Learn anywhere with mobile apps, community help, and gamified learning.</p> <p><strong>Who it's for:</strong> Beginners or casual learners looking to build Python skills on the go.</p> <p><strong>Highlights:</strong> Certificate of completion, leaderboard rankings, and coding challenges.</p> <p><strong>Post-course Outcomes:</strong> Strong Python foundation and readiness for specialization in data science, web, or app development.</p>
+            <h2>10. Python Tutorial (W3Schools)</h2> <p><strong>Description:</strong> A reference-style web-based tutorial offering explanations of all major Python concepts, from variables and loops to advanced topics like file handling and regular expressions.</p> <p><strong>Benefits:</strong> Simple explanations, immediate code execution with “Try it Yourself” editor, and SEO-friendly reference format.</p> <p><strong>Who it's for:</strong> Learners who like short, fast references and self-paced study.</p> <p><strong>Highlights:</strong> Ideal for quick lookups and rapid understanding of syntax and small programs.</p> <p><strong>Post-course Outcomes:</strong> Ability to refer and revise Python topics easily when building projects or preparing for interviews.</p>
+
+            <div class="conclusion">
+                <p>With Python's versatility across web development, data science, and automation, these free resources provide accessible entry points for all skill levels.</p>
+            </div>
+        </article>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

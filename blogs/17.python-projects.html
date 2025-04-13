@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 Python Projects You Can Build While Learning the Language</title>
+  <link rel="stylesheet" href="../navbar.css">
+  <link rel="stylesheet" href="recommended.css">
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Space Grotesk', sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-top: 100px;
+    }
+    h1, h2, h3, h4 {
+      color: #00d4aa;
+    }
+    a {
+      color: #00d4aa;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .meta {
+      color: #888;
+      font-size: 0.9em;
+      margin-bottom: 30px;
+    }
+    .project {
+      margin-bottom: 30px;
+    }
+
+    /* Flex container for main content and sidebar */
+    .content-wrapper {
+      display: flex;
+      gap: 40px;
+    }
+
+    .main-content {
+      flex: 3;
+    }
+
+    aside.recommended-blogs {
+      flex: 1;
+      background-color: #1c1c1c;
+      padding: 20px;
+      border-radius: 10px;
+      height: fit-content;
+      position: sticky;
+      top: 120px;
+    }
+
+    .recommended-post {
+      margin-bottom: 20px;
+    }
+
+    .recommended-post h4 {
+      margin: 5px 0;
+    }
+
+    /* Responsive for smaller screens */
+    @media (max-width: 900px) {
+      .content-wrapper {
+        flex-direction: column;
+      }
+      aside.recommended-blogs {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html"><div class="logo">Course<span class="think">Think</span></div></a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-icon" id="menuIcon">&#9776;</div>
+  </nav>
+
+  <div class="content-wrapper">
+    <div class="main-content">
+      <h1>10 Python Projects You Can Build While Learning the Language</h1>
+      <div class="meta">
+        By Sam Wilson • July 1, 2024
+      </div>
+
+      <img src="https://www.interviewbit.com/blog/wp-content/uploads/2021/07/Python-Projects.png" alt="Python Code">
+
+      <p>A guide for beginners to intermediate Python learners on the top 10 projects to build while learning Python, enhancing coding skills and portfolio.</p>
+
+      <div class="project">
+        <h2>1. To-Do List Application</h2>
+        <p>Build a simple command-line to-do list manager that allows users to add tasks, mark tasks as completed, and delete tasks. Enhance the application by saving tasks to a file so that the list persists between sessions. You can add features like deadlines, priority tagging, and categorized lists. Use Python’s `pickle` or `json` module for storing data, and implement a neat menu-driven interface for smooth user interaction. Challenge yourself by creating a color-coded terminal output for different task statuses.</p>
+      </div>
+      
+      <div class="project">
+        <h2>2. Web Scraper</h2>
+        <p>Create a tool that extracts data from websites using libraries like BeautifulSoup and Requests in Python. Start by scraping a news website to fetch headlines, links, and timestamps. Ensure you handle HTTP errors and respect robots.txt policies. To make it more advanced, schedule your scraper to run daily, store data in a local database like SQLite, and analyze the extracted data to find trends over time. Implement basic logging to track scraper activity and errors.</p>
+      </div>
+      
+      <div class="project">
+        <h2>3. Weather App</h2>
+        <p>Develop a weather application that fetches real-time weather data from APIs like OpenWeatherMap. Display current weather, temperature, humidity, wind speed, and forecasts for the next few days. Design a clean and intuitive GUI using Tkinter (for desktop) or HTML/CSS (for web). Allow users to search by city name or use their geolocation. Add features like saving favorite cities, switching between metric and imperial units, and displaying weather icons dynamically based on conditions.</p>
+      </div>
+      
+      <div class="project">
+        <h2>4. Simple Calculator</h2>
+        <p>Build a GUI calculator using Tkinter that can perform basic arithmetic operations like addition, subtraction, multiplication, and division. Design a user-friendly layout with a display screen and responsive buttons. Extend its functionality to handle operations like square roots, powers, percentages, and memory recall. Focus on input validation to prevent crashes. Enhance the UI by adding themes (light/dark mode) and keyboard input support.</p>
+      </div>
+      
+      <div class="project">
+        <h2>5. Blog Website</h2>
+        <p>Create a basic blog platform using Flask or Django frameworks. Allow users to register, log in, write blog posts, edit, and delete their entries. Implement rich text editing for blog content, tagging for posts, and a comment section. Set up a SQLite or MySQL database to store user and post information securely. Deploy the blog on a free platform like Heroku. Focus on backend routing, template rendering, and user authentication using Flask-Login or Django’s built-in auth system.</p>
+      </div>
+      
+      <div class="project">
+        <h2>6. Password Generator</h2>
+        <p>Develop a secure password generator that can create strong passwords based on user preferences (length, use of uppercase, lowercase, numbers, symbols). Add an option to copy the password to the clipboard instantly. Provide users with feedback on the password’s strength. Implement the UI using Tkinter or a web form with JavaScript. Consider adding a password manager feature that saves generated passwords securely using encryption libraries like `cryptography` in Python.</p>
+      </div>
+      
+      <div class="project">
+        <h2>7. File Organizer</h2>
+        <p>Create a script that automatically sorts files into folders based on their extensions (e.g., .jpg into "Images", .pdf into "Documents"). Allow users to customize the sorting rules and folder names. Add options for moving, copying, or linking files instead of just moving them. Handle filename conflicts smartly by appending numbers or timestamps. Integrate a simple GUI to let users select directories and sorting preferences. Bonus: Monitor folders in real-time and organize new files as soon as they appear.</p>
+      </div>
+      
+      <div class="project">
+        <h2>8. Basic Game</h2>
+        <p>Develop a simple yet fun game like Hangman, Tic-Tac-Toe, or Snake. Use Pygame for more graphical games, or stick to the terminal for text-based games. Add features like multiplayer support, difficulty levels, and score tracking. Focus on clean code structure using classes and functions. If you build Hangman, for example, make sure to select words randomly from a predefined list and show the guessed letters dynamically. Implement smooth win/lose conditions and a restart option.</p>
+      </div>
+      
+      <div class="project">
+        <h2>9. Data Visualization</h2>
+        <p>Use Matplotlib and Seaborn to create beautiful and informative charts from real-world datasets. Start by plotting line graphs, bar charts, and scatter plots. Move towards more advanced visualizations like heatmaps, pie charts, and histograms. Allow users to upload a CSV file and dynamically generate plots. Customize your charts with titles, labels, legends, and gridlines. Save the visualizations as high-quality images or PDFs. Integrate with a small Flask app to create a web-based dashboard if possible.</p>
+      </div>
+      
+      <div class="project">
+        <h2>10. Chatbot</h2>
+        <p>Build a simple rule-based chatbot that can have basic conversations. Use libraries like NLTK or implement simple logic with if-else conditions. Create intents and responses for different categories (greetings, farewells, FAQs). Extend it using machine learning techniques like training a basic model with TensorFlow or using pre-built frameworks like Rasa. Implement a simple web interface or Telegram/Discord bot integration. Focus on improving the bot’s accuracy and making the conversation feel natural over time.</p>
+      </div>
+      
+    </div>
+
+    <aside class="recommended-blogs">
+      <h3>Recommended Blogs</h3>
+
+      <div class="recommended-post">
+        <a href="1.top-10-free-javascript-courses.html">
+          <h4>Top 10 Free JavaScript Courses</h4>
+          <p>Master JavaScript with these free resources</p>
+        </a>
+      </div>
+
+      <div class="recommended-post">
+        <a href="5.best-online-platforms-to-learn-data-science.html">
+          <h4>Best Data Science Platforms</h4>
+          <p>Launch your data science career</p>
+        </a>
+      </div>
+
+      <div class="recommended-post">
+        <a href="4.free-vs-paid-coding-courses.html">
+          <h4>Free vs Paid Courses</h4>
+          <p>How to choose what's right for you</p>
+        </a>
+      </div>
+    </aside>
+  </div>
+  <script src="../script.js"></script>
+</body>
+</html>

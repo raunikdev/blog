@@ -1,0 +1,51 @@
+
+  <link rel="stylesheet" href="../navbar.css">
+  <link rel="stylesheet" href="recommended.css">
+
+
+
+
+  <nav class="navbar">
+    <a href="../index.html"><div class="logo">Course<span class="think">Think</span></div></a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-icon" id="menuIcon">&#9776;</div>
+  </nav>
+
+
+
+
+  <aside class="recommended-blogs">
+    <h3>Recommended Blogs</h3>
+
+    <div class="recommended-post">
+      <a href="../1.top-10-free-javascript-courses.html">
+        <h4>Top 10 Free JavaScript Courses</h4>
+        <p>Master JavaScript with these free resources</p>
+      </a>
+    </div>
+
+    <div class="recommended-post">
+      <a href="5.best-online-platforms-to-learn-data-science.html">
+        <h4>Best Data Science Platforms</h4>
+        <p>Launch your data science career</p>
+      </a>
+    </div>
+
+    <div class="recommended-post">
+      <a href="../4.free-vs-paid-coding-courses.html">
+        <h4>Free vs Paid Courses</h4>
+        <p>How to choose what's right for you</p>
+      </a>
+    </div>
+  </aside>
+
+
+  margin-top: 100px;
+
+
+  <script src="../script.js"></script>
