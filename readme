@@ -1,0 +1,117 @@
+
+  <link rel="stylesheet" href="../navbar.css">
+  <link rel="stylesheet" href="recommended.css">
+
+
+
+
+  <nav class="navbar">
+    <a href="../index.html"><div class="logo">Course<span class="think">Think</span></div></a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-icon" id="menuIcon">&#9776;</div>
+  </nav>
+
+
+
+
+  <aside class="recommended-blogs">
+    <h3>Recommended Blogs</h3>
+
+    <div class="recommended-post">
+      <a href="../1.top-10-free-javascript-courses.html">
+        <h4>Top 10 Free JavaScript Courses</h4>
+        <p>Master JavaScript with these free resources</p>
+      </a>
+    </div>
+
+    <div class="recommended-post">
+      <a href="5.best-online-platforms-to-learn-data-science.html">
+        <h4>Best Data Science Platforms</h4>
+        <p>Launch your data science career</p>
+      </a>
+    </div>
+
+    <div class="recommended-post">
+      <a href="../4.free-vs-paid-coding-courses.html">
+        <h4>Free vs Paid Courses</h4>
+        <p>How to choose what's right for you</p>
+      </a>
+    </div>
+  </aside>
+
+
+  margin-top: 100px;
+  <footer style="background-color: #121212; color: #ffffff; padding: 40px 20px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+      
+      <!-- Left: CourseThink About -->
+      <div style="flex: 1 1 300px; margin-bottom: 30px;">
+        <h2 style="color: #00d1b2;">CourseThink</h2>
+        <p style="max-width: 300px;">
+          CourseThink is a community of bloggers, learners, and educators. Share your knowledge, spark curiosity, and empower others through learning.
+        </p>
+      </div>
+  
+      <!-- Right: Footer Sections -->
+      <div style="flex: 2 1 600px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+        
+        <!-- Recommended Blogs -->
+        <div>
+          <h3 style="color: #00d1b2;">Recommended Blogs</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li><a href="1.top-10-free-javascript-courses.html" style="color: #ffffff; text-decoration: none;">Top 10 Free JavaScript Courses</a></li>
+            <li><a href="5.best-online-platforms-to-learn-data-science.html" style="color: #ffffff; text-decoration: none;">Best Data Science Platforms</a></li>
+            <li><a href="4.free-vs-paid-coding-courses.html" style="color: #ffffff; text-decoration: none;">Free vs Paid Courses</a></li>
+          </ul>
+        </div>
+  
+        <!-- Pages -->
+        <div>
+          <h3 style="color: #00d1b2;">Pages</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li><a href="../index.html" style="color: #ffffff; text-decoration: none;">Home</a></li>
+            <li><a href="../about.html" style="color: #ffffff; text-decoration: none;">About</a></li>
+            <li><a href="../blog.html" style="color: #ffffff; text-decoration: none;">Blog</a></li>
+            <li><a href="../contact.html" style="color: #ffffff; text-decoration: none;">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Latest Posts -->
+        <div>
+          <h3 style="color: #00d1b2;">Latest Posts</h3>
+  
+          <div style="margin-bottom: 10px;">
+            <a href="11.coursera-data-science.html" style="color: #ffffff; text-decoration: none;">
+              <strong>I Took Coursera's Data Science Specialization</strong>
+            </a>
+          </div>
+  
+          <div style="margin-bottom: 10px;">
+            <a href="12.freecodecamp-webdev.html" style="color: #ffffff; text-decoration: none;">
+              <strong>Mastering Web Development in 6 Months</strong>
+            </a>
+          </div>
+  
+          <div style="margin-bottom: 10px;">
+            <a href="13.affordable-bootcamps.html" style="color: #ffffff; text-decoration: none;">
+              <strong>Top 5 Affordable Coding Bootcamps</strong>
+            </a>
+          </div>
+  
+        </div>
+  
+      </div>
+    </div>
+  
+    <!-- Bottom -->
+    <div style="text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px; font-size: 14px;">
+      &copy; 2025 CourseThink. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>

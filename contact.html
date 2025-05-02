@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | CourseThink</title>
+  <link rel="stylesheet" href="navbar.css">
+  <style>
+    body {
+        background-color: #121212;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-section {
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: #00d4aa;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: #d0d0d0;
+        margin-bottom: 40px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        background-color: #1c1c1c;
+        border: 1px solid #333;
+        padding: 15px;
+        font-size: 1rem;
+        color: #ffffff;
+        border-radius: 8px;
+        outline: none;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+        color: #888;
+    }
+
+    .submit-btn {
+        background-color: #00d4aa;
+        color: #121212;
+        border: none;
+        padding: 15px;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: #00b898;
+        color: #ffffff;
+    }
+
+    /* Navbar tweak for hover */
+    .nav-links li a:hover {
+        color: #00d4aa;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="../index.html"><div class="logo">Course<span class="think">Think</span></div></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-icon" id="menuIcon">&#9776;</div>
+  </nav>
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Have questions, feedback, or want to collaborate? We'd love to hear from you!</p>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="contact.js"></script>
+
+<script>
+ document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('.contact-form');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+
+        if (name === "" || email === "" || message === "") {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Please fill out all fields!',
+            });
+            return;
+        }
+
+        // Show a beautiful success popup
+        Swal.fire({
+            icon: 'success',
+            title: 'Message Sent!',
+            text: `Thank you, ${name}. We'll get back to you soon!`,
+            timer: 2500,
+            showConfirmButton: false
+        });
+
+        form.reset();
+    });
+});
+
+
+</script>
+</body>
+</html>

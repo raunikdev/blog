@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Management Courses</title>
+  <link rel="stylesheet" href="../navbar.css">
+  <link rel="stylesheet" href="../footer.css">
+  <link rel="stylesheet" href="recommended.css">
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Space Grotesk', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding-top: 100px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .main-content {
+      flex: 3;
+      min-width: 0;
+      padding-right: 30px;
+    }
+
+    .recommended-blogs {
+      flex: 1;
+      border-left: 1px solid #333;
+      padding-left: 20px;
+      min-width: 280px;
+    }
+
+    h1, h2, h3, h4 {
+      color: #00d4aa;
+    }
+
+    a {
+      color: #00d4aa;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .meta {
+      color: #888;
+      font-size: 0.9em;
+      margin-bottom: 30px;
+    }
+
+    .recommended-post {
+      margin-bottom: 20px;
+    }
+
+    .recommended-post h4 {
+      margin: 5px 0;
+    }
+
+    .recommended-post p {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    .recommended-post a:hover h4 {
+      text-decoration: underline;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #1c1c1c;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .think {
+      color: #00d4aa;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 1.8em;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #1c1c1c;
+        flex-direction: column;
+        display: none;
+        width: 200px;
+        border: 1px solid #333;
+        padding: 10px;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+    .course {
+      background: black;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .course img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 24px;
+      color: #d4d4d4;
+    }
+    p {
+      font-size: 16px;
+      color: #d7d7d7;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="../index.html">
+      <div class="logo">Course<span class="think">Think</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-icon" id="menuIcon">&#9776;</div>
+  </nav>
+
+  <div class="container">
+
+    <div class="main-content">
+      <h1>Product Management Courses</h1>
+      <div class="meta">
+        By Rohit Jha • 24 January 2025
+      </div>
+      <img src="https://userpilot.com/blog/wp-content/uploads/2021/07/Best-Product-manager-courses_02304bf6afcf3de16d5495430fc50a7e_2000.png" alt="Product Management Courses">
+
+      <p>Product management is crucial for building successful products. Here are the best courses to develop these skills:</p>
+
+      <h1>Top 5 Product Management Courses in 2025</h1>
+
+      <div class="course">
+        <h2>1. Digital Product Management: Modern Fundamentals (University of Virginia - Coursera)</h2>
+        <img src="https://productowners.home.blog/wp-content/uploads/2019/04/3138294622_16294e9b46_o.jpg" alt="Digital Product Management Course Image">
+        <p>This course provides a comprehensive introduction to the world of modern digital product management. Taught by experienced faculty from the University of Virginia, it explores the mindset and toolkit of effective product managers. Students learn how to define product vision, develop MVPs, prioritize backlogs, and apply agile frameworks in real-world contexts.</p>
+        <p>You'll also gain insights into customer-centric design, lean experimentation, and how cross-functional teams collaborate to launch and improve digital products. The course is beginner-friendly and includes quizzes, peer-reviewed projects, and practical templates you can use on the job.</p>
+      </div>
+      
+      <div class="course">
+        <h2>2. Product Management Certification Program (Product School)</h2>
+        <img src="https://images.ctfassets.net/6nwv0fapso8r/Ge1kQYtNqdR02YYVqmcKO/8722df31393ea5243f1e02dcfd27fed2/META_THUMBNAIL__certifications_2x.jpg" alt="Product School PM Certification Image">
+        <p>Highly regarded across tech industries, this certification program offers in-depth training led by expert product managers from top companies like Google, Facebook, and Amazon. The curriculum focuses on real-world applications, covering topics like product strategy, roadmap planning, customer research, user stories, data analytics, and stakeholder management.</p>
+        <p>Students participate in live online sessions, interactive workshops, and portfolio-building exercises. By the end of the program, graduates are prepared to apply for product roles or advance their careers with a prestigious certification that is recognized globally.</p>
+      </div>
+      
+      <div class="course">
+        <h2>3. One Month Product Management</h2>
+        <img src="https://s3.eu-west-3.amazonaws.com/certificates.onemonthpm.com/covers/6.png" alt="One Month Product Management Image">
+        <p>This accelerated course is designed for aspiring PMs who want a fast but thorough introduction to the field. In just 30 days, students are taken from beginner-level knowledge to managing their own mock products. The curriculum includes hands-on assignments in idea validation, customer interviews, wireframing, KPIs, and launching.</p>
+        <p>The lessons are digestible and practical, ideal for busy professionals or entrepreneurs looking to understand the PM lifecycle quickly. One Month focuses on lean product methodologies and emphasizes project-based learning with real-world scenarios.</p>
+      </div>
+      
+      <div class="course">
+        <h2>4. Become a Product Manager | Learn the Skills & Get the Job (Udemy)</h2>
+        <img src="https://img-c.udemycdn.com/course/240x135/673654_d677_7.jpg" alt="Udemy Product Manager Course Image">
+        <p>This bestselling Udemy course has helped over 200,000 students learn product management from scratch. It's packed with 13+ hours of video lessons, downloadable templates, and exercises covering every key PM skill—from market research and prototyping to development cycles and launch strategies.</p>
+        <p>The course includes resume-building tips, interview prep, and industry insights to help students land a job in the field. Ideal for job seekers and career switchers, it provides lifetime access and is regularly updated to reflect current trends in tech and product development.</p>
+      </div>
+      
+      <div class="course">
+        <h2>5. Product Management First Steps (LinkedIn Learning)</h2>
+        <img src="https://cdn.lynda.com/course/479069/479069-1600454954725-16x9.jpg" alt="LinkedIn Learning PM Course Image">
+        <p>This concise and beginner-friendly course introduces the basic concepts and responsibilities of a product manager. It’s perfect for those exploring a potential career in product management. Topics include understanding the PM's role, collaborating with engineers and designers, and the product lifecycle.</p>
+        <p>In just under 2 hours, students get a clear overview of how PMs work within organizations, along with practical advice from seasoned professionals. LinkedIn Learning also provides a certificate upon completion, and the course is accessible with a free trial.</p>
+      </div>
+      
+      <h2>Conclusion</h2>
+      <p>Product management is an exciting and rapidly growing career path. Whether you're just starting out or looking to sharpen your skills, these courses offer a range of learning experiences—from beginner-friendly overviews to deep dives with certification. Pick the one that best suits your goals and learning style, and start building your future as a product manager.</p>
+          </div>
+
+      <!-- <aside class="recommended-blogs">
+        <h3>Recommended Blogs</h3>
+
+        <div class="recommended-post">
+          <a href="21.top-ui-ux-design-courses.html">
+            <h4>Top UI/UX Design Courses</h4>
+            <p>Master UI/UX design with these top courses</p>
+          </a>
+        </div>
+
+        <div class="recommended-post">
+          <a href="22.best-free-graphic-design-courses.html">
+            <h4>Best Free Graphic Design Courses</h4>
+            <p>Enhance your design skills with these free resources</p>
+          </a>
+        </div>
+
+        <div class="recommended-post">
+          <a href="23.cybersecurity-certification-paths.html">
+            <h4>Cybersecurity Certification Paths</h4>
+            <p>Explore the best paths to a career in cybersecurity</p>
+          </a>
+        </div>
+      </aside> -->
+  </div>
+
+  <footer style="background-color: #121212; color: #ffffff; padding: 40px 20px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+      <div style="flex: 1 1 300px; margin-bottom: 30px;">
+        <h2 style="color: #00d1b2;">CourseThink</h2>
+        <p>CourseThink is a community of bloggers, learners, and educators...</p>
+      </div>
+
+      <div style="flex: 2 1 600px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+        <div>
+          <h3 style="color: #00d1b2;">Recommended Blogs</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li><a href="1.top-10-free-javascript-courses.html" style="color: #ffffff;">Top 10 Free JavaScript Courses</a></li>
+            <li><a href="5.best-online-platforms-to-learn-data-science.html" style="color: #ffffff;">Best Data Science Platforms</a></li>
+            <li><a href="4.free-vs-paid-coding-courses.html" style="color: #ffffff;">Free vs Paid Courses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="color: #00d1b2;">Pages</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li><a href="../index.html" style="color: #ffffff;">Home</a></li>
+            <li><a href="../about.html" style="color: #ffffff;">About</a></li>
+            <li><a href="../blog.html" style="color: #ffffff;">Blog</a></li>
+            <li><a href="../contact.html" style="color: #ffffff;">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="color: #00d1b2;">Latest Posts</h3>
+          <div><a href="11.coursera-data-science.html" style="color: #ffffff;"><strong>I Took Coursera's Data Science Specialization</strong></a></div>
+          <div><a href="12.freecodecamp-webdev.html" style="color: #ffffff;"><strong>Mastering Web Development in 6 Months</strong></a></div>
+          <div><a href="13.affordable-bootcamps.html" style="color: #ffffff;"><strong>Top 5 Affordable Coding Bootcamps</strong></a></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; border-top: 1px solid #333; padding-top: 20px; font-size: 14px;">
+      &copy; 2025 CourseThink. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    const menuIcon = document.getElementById("menuIcon");
+    const navLinks = document.getElementById("navLinks");
+
+    menuIcon.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+
+</body>
+</html>
